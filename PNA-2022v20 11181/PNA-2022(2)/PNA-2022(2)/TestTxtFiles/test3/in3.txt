@@ -1,0 +1,14 @@
+main
+{
+	int var numberh = habb;
+	print(numberh);
+
+	int var numberb = b0101;
+	print(numberb);
+
+	int var numbero = o11;
+	print(numbero);
+
+	str var string = "qwertyuiopasdfghjklzxcvbnm";
+	print(string);
+}

@@ -1,0 +1,29 @@
+﻿  Error.cpp
+  FST.cpp
+C:\MyFile\Универ\3сем\курсач\PNA-2022(2)\PNA-2022(2)\PNA-2022(2)\FST.cpp(65,37): warning C4267: инициализация: преобразование из "size_t" в "short"; возможна потеря данных
+  Generation.cpp
+  GRB.cpp
+  In.cpp
+C:\MyFile\Универ\3сем\курсач\PNA-2022(2)\PNA-2022(2)\PNA-2022(2)\In.cpp(96,51): warning C4129: d: неизвестная escape-последовательность
+  IT.cpp
+C:\MyFile\Универ\3сем\курсач\PNA-2022(2)\PNA-2022(2)\PNA-2022(2)\IT.cpp(58,40): warning C4267: =: преобразование из "size_t" в "unsigned char"; возможна потеря данных
+  LexAnalysis.cpp
+  Log.cpp
+  LT.cpp
+  MFST.cpp
+C:\MyFile\Универ\3сем\курсач\PNA-2022(2)\PNA-2022(2)\PNA-2022(2)\MFST.cpp(286,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\MyFile\Универ\3сем\курсач\PNA-2022(2)\PNA-2022(2)\PNA-2022(2)\MFST.cpp(291,2): warning C4267: инициализация: преобразование из "size_t" в "short"; возможна потеря данных
+C:\MyFile\Универ\3сем\курсач\PNA-2022(2)\PNA-2022(2)\PNA-2022(2)\MFST.cpp(304,73): warning C4267: =: преобразование из "size_t" в "short"; возможна потеря данных
+C:\MyFile\Универ\3сем\курсач\PNA-2022(2)\PNA-2022(2)\PNA-2022(2)\MFST.cpp(309,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\MyFile\Универ\3сем\курсач\PNA-2022(2)\PNA-2022(2)\PNA-2022(2)\MFST.cpp(315,2): warning C4267: инициализация: преобразование из "size_t" в "short"; возможна потеря данных
+  Out.cpp
+  Parm.cpp
+  PNA-2022.cpp
+  PolishNotation.cpp
+  SemanticAnaliz.cpp
+  Создание кода
+  Previous IPDB not found, fall back to full compilation.
+C:\MyFile\Универ\3сем\курсач\PNA-2022(2)\PNA-2022(2)\PNA-2022(2)\PolishNotation.cpp(128): warning C4715: PN::priority: значение возвращается не при всех путях выполнения
+  All 1119 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Создание кода завершено
+  PNA-2022(2).vcxproj -> C:\MyFile\Универ\3сем\курсач\PNA-2022(2)\PNA-2022(2)\Release\PNA-2022(2).exe

@@ -1,0 +1,30 @@
+﻿  Error.cpp
+  FST.cpp
+C:\MyFile\Универ\3сем\курсач\PNA-2022 prdRls\PNA-2022(2)\PNA-2022(2)\FST.cpp(65,37): warning C4267: инициализация: преобразование из "size_t" в "short"; возможна потеря данных
+  Generation.cpp
+  GRB.cpp
+C:\MyFile\Универ\3сем\курсач\PNA-2022 prdRls\PNA-2022(2)\PNA-2022(2)\GRB.cpp(8,1): warning C4005: NS: изменение макроопределения
+C:\MyFile\Универ\3сем\курсач\PNA-2022 prdRls\PNA-2022(2)\PNA-2022(2)\MFST.h(8): message : см. предыдущее определение "NS"
+C:\MyFile\Универ\3сем\курсач\PNA-2022 prdRls\PNA-2022(2)\PNA-2022(2)\GRB.cpp(9,1): warning C4005: TS: изменение макроопределения
+C:\MyFile\Универ\3сем\курсач\PNA-2022 prdRls\PNA-2022(2)\PNA-2022(2)\MFST.h(9): message : см. предыдущее определение "TS"
+  In.cpp
+C:\MyFile\Универ\3сем\курсач\PNA-2022 prdRls\PNA-2022(2)\PNA-2022(2)\In.cpp(95,51): warning C4129: d: неизвестная escape-последовательность
+  IT.cpp
+C:\MyFile\Универ\3сем\курсач\PNA-2022 prdRls\PNA-2022(2)\PNA-2022(2)\IT.cpp(57,40): warning C4267: =: преобразование из "size_t" в "unsigned char"; возможна потеря данных
+  LexAnalysis.cpp
+  Log.cpp
+  LT.cpp
+  MFST.cpp
+C:\MyFile\Универ\3сем\курсач\PNA-2022 prdRls\PNA-2022(2)\PNA-2022(2)\MFST.cpp(279,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\MyFile\Универ\3сем\курсач\PNA-2022 prdRls\PNA-2022(2)\PNA-2022(2)\MFST.cpp(284,2): warning C4267: инициализация: преобразование из "size_t" в "short"; возможна потеря данных
+C:\MyFile\Универ\3сем\курсач\PNA-2022 prdRls\PNA-2022(2)\PNA-2022(2)\MFST.cpp(297,73): warning C4267: =: преобразование из "size_t" в "short"; возможна потеря данных
+C:\MyFile\Универ\3сем\курсач\PNA-2022 prdRls\PNA-2022(2)\PNA-2022(2)\MFST.cpp(302,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\MyFile\Универ\3сем\курсач\PNA-2022 prdRls\PNA-2022(2)\PNA-2022(2)\MFST.cpp(308,2): warning C4267: инициализация: преобразование из "size_t" в "short"; возможна потеря данных
+  Out.cpp
+  Parm.cpp
+  PNA-2022.cpp
+  PolishNotation.cpp
+  SemanticAnaliz.cpp
+  Создание кода...
+C:\MyFile\Универ\3сем\курсач\PNA-2022 prdRls\PNA-2022(2)\PNA-2022(2)\PolishNotation.cpp(126): warning C4715: PN::priority: значение возвращается не при всех путях выполнения
+  PNA-2022(2).vcxproj -> C:\MyFile\Универ\3сем\курсач\PNA-2022 prdRls\PNA-2022(2)\Debug\PNA-2022(2).exe

@@ -1,0 +1,18 @@
+int def inttypes(int arg ccc)
+{
+	if(5 > ccc)
+	then
+	{
+		print(5);
+	}
+	else
+	{
+		print(ccc);
+	}
+	return 0;
+}
+
+main
+{
+	int var callf = inttypes(4);
+}

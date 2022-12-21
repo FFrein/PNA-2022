@@ -1,0 +1,4 @@
+﻿  Assembling ..\PNA-2022(2)\TestTxtFiles\test2\in2.txt.asm...
+..\PNA-2022(2)\TestTxtFiles\test2\in2.txt.asm(27): error A2047: empty (null) string
+..\PNA-2022(2)\TestTxtFiles\test2\in2.txt.asm(92): warning A6004: procedure argument or local not referenced : ccc_inttypes
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\BuildCustomizations\masm.targets(70,5): error MSB3721: выход из команды "ml.exe /c /nologo /Zi /Fo"Debug\in2.txt.obj" /W3 /errorReport:prompt  /Ta"..\PNA-2022(2)\TestTxtFiles\test2\in2.txt.asm"" с кодом "1".

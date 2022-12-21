@@ -1,0 +1,35 @@
+ПЕРЕМЕННЫЕ
+Индекс LE	Область видимости	Идентификатор	Тип Идентификатора	Тип данных	Значение	Длина строки
+        6	         inttypes	          ccc	                 P	       INT	       0	           -
+       11	         inttypes	      numberh	                 V	       INT	    2747	           -
+       22	         inttypes	      numberb	                 V	       INT	       5	           -
+       33	         inttypes	      numbero	                 V	       INT	       9	           -
+       72	             main	         num2	                 V	       INT	     -14	           -
+       78	             main	          num	                 V	       INT	      14	           -
+       84	             main	         data	                 V	       INT	       0	           -
+       97	             main	         time	                 V	       INT	       0	           -
+      114	             main	         num3	                 V	       INT	-2147483648	           -
+      120	             main	          abc	                 V	       STR	        	           0
+      136	             main	            i	                 V	       INT	      20	           -
+      161	             main	        callf	                 V	       INT	       0	           -
+
+ФУНКЦИИ
+Индекс LE	Область видимости	Идентификатор	Тип данных возврата
+        1	           global	        adate	                INT
+        1	           global	        atime	                INT
+        2	           global	     inttypes	                INT
+
+ЛИТЕРАЛЫ
+Индекс LE	Идентификатор	Тип данных	                                Значение	Длина строки
+       13	           L0        INT	                                    2747	           -
+       24	           L1        INT	                                       5	           -
+       35	           L2        INT	                                       9	           -
+       65	           L3        INT	                                       0	           -
+       74	           L4        INT	                                     -14	           -
+       80	           L5        INT	                                      14	           -
+      110	           L6        INT	                              2147483647	           -
+      116	           L7        INT	                             -2147483648	           -
+      122	           L8        STR	                                      ""	           2
+      144	           L9        INT	                                      20	           -
+      156	          L10        INT	                                       1	           -
+      165	          L11        INT	                                       4	           -

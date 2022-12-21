@@ -1,0 +1,9 @@
+main
+{
+	int var i = 0;
+	repeat(i < 20)
+	{
+     		print(i);	
+		i = i + 1;
+	}
+}

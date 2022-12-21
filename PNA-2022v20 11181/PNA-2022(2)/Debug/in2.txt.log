@@ -1,0 +1,116 @@
+----- Протокол ----- Дата: 21.12.2022 среда 14:22:51 
+
+----- Параметры -----
+-log: in2.txt.log
+-out: out.asm
+-in: in2.txt
+
+----- Исходные данные -----
+Количество символов	: 108
+Проигнорировано		: 20
+Количество строк	: 13
+
+Шаг :Правило             Входная лента                 Стек                
+0   :S->m{N}S            m{tvi;p(i));~(i<l){p(i);i     S$                  
+1   : SAVESTATE:          1
+1   :                    m{tvi;p(i));~(i<l){p(i);i     m{N}S$              
+2   :                    {tvi;p(i));~(i<l){p(i);i=     {N}S$               
+3   :                    tvi;p(i));~(i<l){p(i);i=i     N}S$                
+4   :N->tY;N             tvi;p(i));~(i<l){p(i);i=i     N}S$                
+5   : SAVESTATE:          2
+5   :                    tvi;p(i));~(i<l){p(i);i=i     tY;N}S$             
+6   :                    vi;p(i));~(i<l){p(i);i=i#     Y;N}S$              
+7   :Y->vi               vi;p(i));~(i<l){p(i);i=i#     Y;N}S$              
+8   : SAVESTATE:          3
+8   :                    vi;p(i));~(i<l){p(i);i=i#     vi;N}S$             
+9   :                    i;p(i));~(i<l){p(i);i=i#l     i;N}S$              
+10  :                    ;p(i));~(i<l){p(i);i=i#l;     ;N}S$               
+11  :                    p(i));~(i<l){p(i);i=i#l;}     N}S$                
+12  :N->p(W);N           p(i));~(i<l){p(i);i=i#l;}     N}S$                
+13  : SAVESTATE:          4
+13  :                    p(i));~(i<l){p(i);i=i#l;}     p(W);N}S$           
+14  :                    (i));~(i<l){p(i);i=i#l;}}     (W);N}S$            
+15  :                    i));~(i<l){p(i);i=i#l;}}$     W);N}S$             
+16  :W->i                i));~(i<l){p(i);i=i#l;}}$     W);N}S$             
+17  : SAVESTATE:          5
+17  :                    i));~(i<l){p(i);i=i#l;}}$     i);N}S$             
+18  :                    ));~(i<l){p(i);i=i#l;}}$      );N}S$              
+19  :                    );~(i<l){p(i);i=i#l;}}$       ;N}S$               
+20  : TNS_NS_NORULECHAIN/NS_NORULE
+20  : RESTATE             
+20  :                    i));~(i<l){p(i);i=i#l;}}$     W);N}S$             
+21  :W->i,W              i));~(i<l){p(i);i=i#l;}}$     W);N}S$             
+22  : SAVESTATE:          5
+22  :                    i));~(i<l){p(i);i=i#l;}}$     i,W);N}S$           
+23  :                    ));~(i<l){p(i);i=i#l;}}$      ,W);N}S$            
+24  : TNS_NS_NORULECHAIN/NS_NORULE
+24  : RESTATE             
+24  :                    i));~(i<l){p(i);i=i#l;}}$     W);N}S$             
+25  : TNS_NS_NORULECHAIN/NS_NORULE
+25  : RESTATE             
+25  :                    p(i));~(i<l){p(i);i=i#l;}     N}S$                
+26  :N->                 p(i));~(i<l){p(i);i=i#l;}     N}S$                
+27  : SAVESTATE:          4
+27  :                    p(i));~(i<l){p(i);i=i#l;}     }S$                 
+28  : TNS_NS_NORULECHAIN/NS_NORULE
+28  : RESTATE             
+28  :                    p(i));~(i<l){p(i);i=i#l;}     N}S$                
+29  : TNS_NS_NORULECHAIN/NS_NORULE
+29  : RESTATE             
+29  :                    vi;p(i));~(i<l){p(i);i=i#     Y;N}S$              
+30  :Y->vi=U             vi;p(i));~(i<l){p(i);i=i#     Y;N}S$              
+31  : SAVESTATE:          3
+31  :                    vi;p(i));~(i<l){p(i);i=i#     vi=U;N}S$           
+32  :                    i;p(i));~(i<l){p(i);i=i#l     i=U;N}S$            
+33  :                    ;p(i));~(i<l){p(i);i=i#l;     =U;N}S$             
+34  : TNS_NS_NORULECHAIN/NS_NORULE
+34  : RESTATE             
+34  :                    vi;p(i));~(i<l){p(i);i=i#     Y;N}S$              
+35  :Y->vi=i(W)          vi;p(i));~(i<l){p(i);i=i#     Y;N}S$              
+36  : SAVESTATE:          3
+36  :                    vi;p(i));~(i<l){p(i);i=i#     vi=i(W);N}S$        
+37  :                    i;p(i));~(i<l){p(i);i=i#l     i=i(W);N}S$         
+38  :                    ;p(i));~(i<l){p(i);i=i#l;     =i(W);N}S$          
+39  : TNS_NS_NORULECHAIN/NS_NORULE
+39  : RESTATE             
+39  :                    vi;p(i));~(i<l){p(i);i=i#     Y;N}S$              
+40  :Y->vi=i()           vi;p(i));~(i<l){p(i);i=i#     Y;N}S$              
+41  : SAVESTATE:          3
+41  :                    vi;p(i));~(i<l){p(i);i=i#     vi=i();N}S$         
+42  :                    i;p(i));~(i<l){p(i);i=i#l     i=i();N}S$          
+43  :                    ;p(i));~(i<l){p(i);i=i#l;     =i();N}S$           
+44  : TNS_NS_NORULECHAIN/NS_NORULE
+44  : RESTATE             
+44  :                    vi;p(i));~(i<l){p(i);i=i#     Y;N}S$              
+45  :Y->vi=U#U           vi;p(i));~(i<l){p(i);i=i#     Y;N}S$              
+46  : SAVESTATE:          3
+46  :                    vi;p(i));~(i<l){p(i);i=i#     vi=U#U;N}S$         
+47  :                    i;p(i));~(i<l){p(i);i=i#l     i=U#U;N}S$          
+48  :                    ;p(i));~(i<l){p(i);i=i#l;     =U#U;N}S$           
+49  : TNS_NS_NORULECHAIN/NS_NORULE
+49  : RESTATE             
+49  :                    vi;p(i));~(i<l){p(i);i=i#     Y;N}S$              
+50  : TNS_NS_NORULECHAIN/NS_NORULE
+50  : RESTATE             
+50  :                    tvi;p(i));~(i<l){p(i);i=i     N}S$                
+51  :N->                 tvi;p(i));~(i<l){p(i);i=i     N}S$                
+52  : SAVESTATE:          2
+52  :                    tvi;p(i));~(i<l){p(i);i=i     }S$                 
+53  : TNS_NS_NORULECHAIN/NS_NORULE
+53  : RESTATE             
+53  :                    tvi;p(i));~(i<l){p(i);i=i     N}S$                
+54  : TNS_NS_NORULECHAIN/NS_NORULE
+54  : RESTATE             
+54  :                    m{tvi;p(i));~(i<l){p(i);i     S$                  
+55  :S->                 m{tvi;p(i));~(i<l){p(i);i     S$                  
+56  : SAVESTATE:          1
+56  :                    m{tvi;p(i));~(i<l){p(i);i     $                   
+57  : TNS_NS_NORULECHAIN/NS_NORULE
+57  : RESTATE             
+57  :                    m{tvi;p(i));~(i<l){p(i);i     S$                  
+58  : TNS_NS_NORULECHAIN/NS_NORULE
+59  : ------>NS_NORULE    
+------------------------------------------------------------------------------------------   ------
+604: строка 5,	Ошибка в параметрах при вызове функции
+601: строка 5,	Ошибочный оператор
+607: строка 3,	Ошибка при определении переменной

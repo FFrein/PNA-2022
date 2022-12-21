@@ -1,0 +1,35 @@
+int def inttypes(int arg ccc)
+{
+	int var numberh = habb;
+	print(numberh);
+	int var numberb = b0101;
+	print(numberb);
+	int var numbero = o11;
+	print(numbero);
+
+	return 0;
+}
+
+main
+{
+	int var num2 = -14;
+	int var num = 14;
+	int var data = adate();
+	print(data);
+	int var time = atime();
+	print(time);
+	num = 2147483647;
+	int var num3 = -2147483648;
+
+	print(num3);
+	print(abc);
+	
+	int var i = 0;
+	repeat(i < 20)
+	{
+     		print(num);	
+		i = i + 1;
+	}
+
+	int var callf = inttypes(4);
+}

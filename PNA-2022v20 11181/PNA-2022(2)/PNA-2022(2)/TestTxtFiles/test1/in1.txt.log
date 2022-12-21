@@ -1,0 +1,242 @@
+----- Протокол ----- Дата: 19.12.2022 понедельник 22:21:36 
+
+----- Параметры -----
+-log: in1.txt.log
+-out: in1.txt.asm
+-in: in1.txt
+
+----- Исходные данные -----
+Количество символов	: 187
+Проигнорировано		: 16
+Количество строк	: 18
+
+Шаг :Правило             Входная лента                 Стек                
+0   :S->tdi(F){NrU;}S    tdi(tai){?(l>i):{p(l);}!{     S$                  
+1   : SAVESTATE:          1
+1   :                    tdi(tai){?(l>i):{p(l);}!{     tdi(F){NrU;}S$      
+2   :                    di(tai){?(l>i):{p(l);}!{p     di(F){NrU;}S$       
+3   :                    i(tai){?(l>i):{p(l);}!{p(     i(F){NrU;}S$        
+4   :                    (tai){?(l>i):{p(l);}!{p(i     (F){NrU;}S$         
+5   :                    tai){?(l>i):{p(l);}!{p(i)     F){NrU;}S$          
+6   :F->tP               tai){?(l>i):{p(l);}!{p(i)     F){NrU;}S$          
+7   : SAVESTATE:          2
+7   :                    tai){?(l>i):{p(l);}!{p(i)     tP){NrU;}S$         
+8   :                    ai){?(l>i):{p(l);}!{p(i);     P){NrU;}S$          
+9   :P->ai               ai){?(l>i):{p(l);}!{p(i);     P){NrU;}S$          
+10  : SAVESTATE:          3
+10  :                    ai){?(l>i):{p(l);}!{p(i);     ai){NrU;}S$         
+11  :                    i){?(l>i):{p(l);}!{p(i);}     i){NrU;}S$          
+12  :                    ){?(l>i):{p(l);}!{p(i);}r     ){NrU;}S$           
+13  :                    {?(l>i):{p(l);}!{p(i);}rl     {NrU;}S$            
+14  :                    ?(l>i):{p(l);}!{p(i);}rl;     NrU;}S$             
+15  :N->?KJN             ?(l>i):{p(l);}!{p(i);}rl;     NrU;}S$             
+16  : SAVESTATE:          4
+16  :                    ?(l>i):{p(l);}!{p(i);}rl;     ?KJNrU;}S$          
+17  :                    (l>i):{p(l);}!{p(i);}rl;}     KJNrU;}S$           
+18  :K->(U<U)            (l>i):{p(l);}!{p(i);}rl;}     KJNrU;}S$           
+19  : SAVESTATE:          5
+19  :                    (l>i):{p(l);}!{p(i);}rl;}     (U<U)JNrU;}S$       
+20  :                    l>i):{p(l);}!{p(i);}rl;}m     U<U)JNrU;}S$        
+21  :U->l                l>i):{p(l);}!{p(i);}rl;}m     U<U)JNrU;}S$        
+22  : SAVESTATE:          6
+22  :                    l>i):{p(l);}!{p(i);}rl;}m     l<U)JNrU;}S$        
+23  :                    >i):{p(l);}!{p(i);}rl;}m{     <U)JNrU;}S$         
+24  : TNS_NS_NORULECHAIN/NS_NORULE
+24  : RESTATE             
+24  :                    l>i):{p(l);}!{p(i);}rl;}m     U<U)JNrU;}S$        
+25  : TNS_NS_NORULECHAIN/NS_NORULE
+25  : RESTATE             
+25  :                    (l>i):{p(l);}!{p(i);}rl;}     KJNrU;}S$           
+26  :K->(U>U)            (l>i):{p(l);}!{p(i);}rl;}     KJNrU;}S$           
+27  : SAVESTATE:          5
+27  :                    (l>i):{p(l);}!{p(i);}rl;}     (U>U)JNrU;}S$       
+28  :                    l>i):{p(l);}!{p(i);}rl;}m     U>U)JNrU;}S$        
+29  :U->l                l>i):{p(l);}!{p(i);}rl;}m     U>U)JNrU;}S$        
+30  : SAVESTATE:          6
+30  :                    l>i):{p(l);}!{p(i);}rl;}m     l>U)JNrU;}S$        
+31  :                    >i):{p(l);}!{p(i);}rl;}m{     >U)JNrU;}S$         
+32  :                    i):{p(l);}!{p(i);}rl;}m{t     U)JNrU;}S$          
+33  :U->i                i):{p(l);}!{p(i);}rl;}m{t     U)JNrU;}S$          
+34  : SAVESTATE:          7
+34  :                    i):{p(l);}!{p(i);}rl;}m{t     i)JNrU;}S$          
+35  :                    ):{p(l);}!{p(i);}rl;}m{tv     )JNrU;}S$           
+36  :                    :{p(l);}!{p(i);}rl;}m{tvi     JNrU;}S$            
+37  :J->:{N}             :{p(l);}!{p(i);}rl;}m{tvi     JNrU;}S$            
+38  : SAVESTATE:          8
+38  :                    :{p(l);}!{p(i);}rl;}m{tvi     :{N}NrU;}S$         
+39  :                    {p(l);}!{p(i);}rl;}m{tvi=     {N}NrU;}S$          
+40  :                    p(l);}!{p(i);}rl;}m{tvi=i     N}NrU;}S$           
+41  :N->p(W);N           p(l);}!{p(i);}rl;}m{tvi=i     N}NrU;}S$           
+42  : SAVESTATE:          9
+42  :                    p(l);}!{p(i);}rl;}m{tvi=i     p(W);N}NrU;}S$      
+43  :                    (l);}!{p(i);}rl;}m{tvi=i(     (W);N}NrU;}S$       
+44  :                    l);}!{p(i);}rl;}m{tvi=i(l     W);N}NrU;}S$        
+45  :W->l                l);}!{p(i);}rl;}m{tvi=i(l     W);N}NrU;}S$        
+46  : SAVESTATE:          10
+46  :                    l);}!{p(i);}rl;}m{tvi=i(l     l);N}NrU;}S$        
+47  :                    );}!{p(i);}rl;}m{tvi=i(l)     );N}NrU;}S$         
+48  :                    ;}!{p(i);}rl;}m{tvi=i(l);     ;N}NrU;}S$          
+49  :                    }!{p(i);}rl;}m{tvi=i(l);}     N}NrU;}S$           
+50  :N->                 }!{p(i);}rl;}m{tvi=i(l);}     N}NrU;}S$           
+51  : SAVESTATE:          11
+51  :                    }!{p(i);}rl;}m{tvi=i(l);}     }NrU;}S$            
+52  :                    !{p(i);}rl;}m{tvi=i(l);}$     NrU;}S$             
+53  :N->                 !{p(i);}rl;}m{tvi=i(l);}$     NrU;}S$             
+54  : SAVESTATE:          12
+54  :                    !{p(i);}rl;}m{tvi=i(l);}$     rU;}S$              
+55  : TNS_NS_NORULECHAIN/NS_NORULE
+55  : RESTATE             
+55  :                    !{p(i);}rl;}m{tvi=i(l);}$     NrU;}S$             
+56  : TNS_NS_NORULECHAIN/NS_NORULE
+56  : RESTATE             
+56  :                    }!{p(i);}rl;}m{tvi=i(l);}     N}NrU;}S$           
+57  : TNS_NS_NORULECHAIN/NS_NORULE
+57  : RESTATE             
+57  :                    l);}!{p(i);}rl;}m{tvi=i(l     W);N}NrU;}S$        
+58  :W->l,W              l);}!{p(i);}rl;}m{tvi=i(l     W);N}NrU;}S$        
+59  : SAVESTATE:          10
+59  :                    l);}!{p(i);}rl;}m{tvi=i(l     l,W);N}NrU;}S$      
+60  :                    );}!{p(i);}rl;}m{tvi=i(l)     ,W);N}NrU;}S$       
+61  : TNS_NS_NORULECHAIN/NS_NORULE
+61  : RESTATE             
+61  :                    l);}!{p(i);}rl;}m{tvi=i(l     W);N}NrU;}S$        
+62  : TNS_NS_NORULECHAIN/NS_NORULE
+62  : RESTATE             
+62  :                    p(l);}!{p(i);}rl;}m{tvi=i     N}NrU;}S$           
+63  :N->                 p(l);}!{p(i);}rl;}m{tvi=i     N}NrU;}S$           
+64  : SAVESTATE:          9
+64  :                    p(l);}!{p(i);}rl;}m{tvi=i     }NrU;}S$            
+65  : TNS_NS_NORULECHAIN/NS_NORULE
+65  : RESTATE             
+65  :                    p(l);}!{p(i);}rl;}m{tvi=i     N}NrU;}S$           
+66  : TNS_NS_NORULECHAIN/NS_NORULE
+66  : RESTATE             
+66  :                    :{p(l);}!{p(i);}rl;}m{tvi     JNrU;}S$            
+67  :J->:{N}!{N}         :{p(l);}!{p(i);}rl;}m{tvi     JNrU;}S$            
+68  : SAVESTATE:          8
+68  :                    :{p(l);}!{p(i);}rl;}m{tvi     :{N}!{N}NrU;}S$     
+69  :                    {p(l);}!{p(i);}rl;}m{tvi=     {N}!{N}NrU;}S$      
+70  :                    p(l);}!{p(i);}rl;}m{tvi=i     N}!{N}NrU;}S$       
+71  :N->p(W);N           p(l);}!{p(i);}rl;}m{tvi=i     N}!{N}NrU;}S$       
+72  : SAVESTATE:          9
+72  :                    p(l);}!{p(i);}rl;}m{tvi=i     p(W);N}!{N}NrU;}S$  
+73  :                    (l);}!{p(i);}rl;}m{tvi=i(     (W);N}!{N}NrU;}S$   
+74  :                    l);}!{p(i);}rl;}m{tvi=i(l     W);N}!{N}NrU;}S$    
+75  :W->l                l);}!{p(i);}rl;}m{tvi=i(l     W);N}!{N}NrU;}S$    
+76  : SAVESTATE:          10
+76  :                    l);}!{p(i);}rl;}m{tvi=i(l     l);N}!{N}NrU;}S$    
+77  :                    );}!{p(i);}rl;}m{tvi=i(l)     );N}!{N}NrU;}S$     
+78  :                    ;}!{p(i);}rl;}m{tvi=i(l);     ;N}!{N}NrU;}S$      
+79  :                    }!{p(i);}rl;}m{tvi=i(l);}     N}!{N}NrU;}S$       
+80  :N->                 }!{p(i);}rl;}m{tvi=i(l);}     N}!{N}NrU;}S$       
+81  : SAVESTATE:          11
+81  :                    }!{p(i);}rl;}m{tvi=i(l);}     }!{N}NrU;}S$        
+82  :                    !{p(i);}rl;}m{tvi=i(l);}$     !{N}NrU;}S$         
+83  :                    {p(i);}rl;}m{tvi=i(l);}$      {N}NrU;}S$          
+84  :                    p(i);}rl;}m{tvi=i(l);}$       N}NrU;}S$           
+85  :N->p(W);N           p(i);}rl;}m{tvi=i(l);}$       N}NrU;}S$           
+86  : SAVESTATE:          12
+86  :                    p(i);}rl;}m{tvi=i(l);}$       p(W);N}NrU;}S$      
+87  :                    (i);}rl;}m{tvi=i(l);}$        (W);N}NrU;}S$       
+88  :                    i);}rl;}m{tvi=i(l);}$         W);N}NrU;}S$        
+89  :W->i                i);}rl;}m{tvi=i(l);}$         W);N}NrU;}S$        
+90  : SAVESTATE:          13
+90  :                    i);}rl;}m{tvi=i(l);}$         i);N}NrU;}S$        
+91  :                    );}rl;}m{tvi=i(l);}$          );N}NrU;}S$         
+92  :                    ;}rl;}m{tvi=i(l);}$           ;N}NrU;}S$          
+93  :                    }rl;}m{tvi=i(l);}$            N}NrU;}S$           
+94  :N->                 }rl;}m{tvi=i(l);}$            N}NrU;}S$           
+95  : SAVESTATE:          14
+95  :                    }rl;}m{tvi=i(l);}$            }NrU;}S$            
+96  :                    rl;}m{tvi=i(l);}$             NrU;}S$             
+97  :N->                 rl;}m{tvi=i(l);}$             NrU;}S$             
+98  : SAVESTATE:          15
+98  :                    rl;}m{tvi=i(l);}$             rU;}S$              
+99  :                    l;}m{tvi=i(l);}$              U;}S$               
+100 :U->l                l;}m{tvi=i(l);}$              U;}S$               
+101 : SAVESTATE:          16
+101 :                    l;}m{tvi=i(l);}$              l;}S$               
+102 :                    ;}m{tvi=i(l);}$               ;}S$                
+103 :                    }m{tvi=i(l);}$                }S$                 
+104 :                    m{tvi=i(l);}$                 S$                  
+105 :S->m{N}S            m{tvi=i(l);}$                 S$                  
+106 : SAVESTATE:          17
+106 :                    m{tvi=i(l);}$                 m{N}S$              
+107 :                    {tvi=i(l);}$                  {N}S$               
+108 :                    tvi=i(l);}$                   N}S$                
+109 :N->tY;N             tvi=i(l);}$                   N}S$                
+110 : SAVESTATE:          18
+110 :                    tvi=i(l);}$                   tY;N}S$             
+111 :                    vi=i(l);}$                    Y;N}S$              
+112 :Y->vi               vi=i(l);}$                    Y;N}S$              
+113 : SAVESTATE:          19
+113 :                    vi=i(l);}$                    vi;N}S$             
+114 :                    i=i(l);}$                     i;N}S$              
+115 :                    =i(l);}$                      ;N}S$               
+116 : TNS_NS_NORULECHAIN/NS_NORULE
+116 : RESTATE             
+116 :                    vi=i(l);}$                    Y;N}S$              
+117 :Y->vi=U             vi=i(l);}$                    Y;N}S$              
+118 : SAVESTATE:          19
+118 :                    vi=i(l);}$                    vi=U;N}S$           
+119 :                    i=i(l);}$                     i=U;N}S$            
+120 :                    =i(l);}$                      =U;N}S$             
+121 :                    i(l);}$                       U;N}S$              
+122 :U->i                i(l);}$                       U;N}S$              
+123 : SAVESTATE:          20
+123 :                    i(l);}$                       i;N}S$              
+124 :                    (l);}$                        ;N}S$               
+125 : TNS_NS_NORULECHAIN/NS_NORULE
+125 : RESTATE             
+125 :                    i(l);}$                       U;N}S$              
+126 : TNS_NS_NORULECHAIN/NS_NORULE
+126 : RESTATE             
+126 :                    vi=i(l);}$                    Y;N}S$              
+127 :Y->vi=i(W)          vi=i(l);}$                    Y;N}S$              
+128 : SAVESTATE:          19
+128 :                    vi=i(l);}$                    vi=i(W);N}S$        
+129 :                    i=i(l);}$                     i=i(W);N}S$         
+130 :                    =i(l);}$                      =i(W);N}S$          
+131 :                    i(l);}$                       i(W);N}S$           
+132 :                    (l);}$                        (W);N}S$            
+133 :                    l);}$                         W);N}S$             
+134 :W->l                l);}$                         W);N}S$             
+135 : SAVESTATE:          20
+135 :                    l);}$                         l);N}S$             
+136 :                    );}$                          );N}S$              
+137 :                    ;}$                           ;N}S$               
+138 :                    }$                            N}S$                
+139 :N->                 }$                            N}S$                
+140 : SAVESTATE:          21
+140 :                    }$                            }S$                 
+141 :                    $                             S$                  
+142 :S->                 $                             S$                  
+143 : SAVESTATE:          22
+143 :                    $                             $                   
+144 :                                                                      
+145 : LENTA_END           
+146 : ------>LENTA_END    
+------------------------------------------------------------------------------------------   ------
+0   всего строк 48, синтаксический анализ выполнен без ошибок
+0   : S->tdi(F){NrU;}S    
+4   : F->tP               
+5   : P->ai               
+9   : N->?KJN             
+10  : K->(U>U)            
+11  : U->l                
+13  : U->i                
+15  : J->:{N}!{N}         
+17  : N->p(W);N           
+19  : W->l                
+22  : N->                 
+25  : N->p(W);N           
+27  : W->i                
+30  : N->                 
+31  : N->                 
+32  : U->l                
+35  : S->m{N}S            
+37  : N->tY;N             
+38  : Y->vi=i(W)          
+43  : W->l                
+46  : N->                 
+47  : S->                 
